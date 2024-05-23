@@ -1,0 +1,13 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: danielstudio-test221
+spec:
+  secretName: danielstudio-test221
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: 'danielstudio.store'
+  dnsNames:
+  - danielstudio.store
+  - test.danielstudio.store
